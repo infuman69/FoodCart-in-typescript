@@ -19,7 +19,7 @@ interface cardProps {
 }
 
 
-const FoodCard = ({
+const FoodCard:React.FC<cardProps> = ({
   fav,
   mealname,
   id,

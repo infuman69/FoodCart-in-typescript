@@ -3,7 +3,7 @@ type moreProps = {
   num: number;
   setNum: (value: number | ((prevVar: number) => number)) => void;
 };
-const ShowMore = ({ num, setNum }: moreProps) => {
+const ShowMore:React.FC<moreProps> = ({ num, setNum }: moreProps) => {
   const showMoreItems = () => {
     setNum(num + 1);
   };

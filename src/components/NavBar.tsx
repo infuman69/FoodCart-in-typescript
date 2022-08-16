@@ -9,7 +9,7 @@ export interface NavProps {
   setToggle: (value: boolean | ((prevVar: boolean) => boolean)) => void;
   setItems: (value: Array<Meal> | ((prevVar: Array<Meal>) => Array<Meal>)) => void;
 }
-const NavBar = ({ favFoodList, toggle, setToggle, setItems }: NavProps) => {
+const NavBar:React.FC<NavProps>= ({ favFoodList, toggle, setToggle, setItems }: NavProps) => {
   const displayFav = () => {
     setToggle(!toggle);
     const red = document.querySelector(".NavHeart")!;

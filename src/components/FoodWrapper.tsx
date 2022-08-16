@@ -5,7 +5,7 @@ import FoodCard from "./FoodCard";
 import NavBar from "./NavBar";
 import ShowMore from "./ShowMore";
 
-const FoodWrapper = () => {
+const FoodWrapper:React.FC = () => {
   let [num, setNum] = useState<number>(2);
   let [favFoodList, setFavFoodList] = useState<Array<any>>([]);
   let [toggle, setToggle] = useState<boolean>(true);
